@@ -3,7 +3,7 @@ entries:
   metadefender_core:
   - apiVersion: v2
     appVersion: 5.14.0
-    created: "2025-05-21T17:37:53.406712+03:00"
+    created: "2025-05-21T17:52:34.84968+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -15,4 +15,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/metadefender_core-5.14.0.tgz
     version: 5.14.0
-generated: "2025-05-21T17:37:53.405591+03:00"
+generated: "2025-05-21T17:52:34.84736+03:00"
