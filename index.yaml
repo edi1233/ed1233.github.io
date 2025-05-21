@@ -3,16 +3,16 @@ entries:
   metadefender_core:
   - apiVersion: v2
     appVersion: 5.14.0
-    created: "2025-05-17T23:37:54.431934312+03:00"
+    created: "2025-05-21T16:49:20.848882+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
       Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
       annotation for AWS and Azure. Added control flag to still use it for GCP '
-    digest: 1e80e863ecff08753b312d9222d824425b8b1d147b626706cee5752c75e59093
+    digest: 73be759ce075a12275b1d2a7910eb697e386c2d9aebdaec57cf52cbd4f9c9d49
     name: metadefender_core
     type: application
     urls:
     - https://edi1233.github.io/ed1233.github.io/metadefender_core-5.14.0.tgz
     version: 5.14.0
-generated: "2025-05-17T23:37:54.431130909+03:00"
+generated: "2025-05-21T16:49:20.847103+03:00"
