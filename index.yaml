@@ -2,8 +2,22 @@ apiVersion: v1
 entries:
   metadefender_core:
   - apiVersion: v2
+    appVersion: 5.14.2
+    created: "2025-06-23T16:55:04.811972088+03:00"
+    description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
+      in a Kubernetes cluster.   Release Notes - Environment variables to migrate
+      processing history (Pre-steps needed) - Environment variables to enable Licensing
+      Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
+      annotation for AWS and Azure. Added control flag to still use it for GCP '
+    digest: c2c98d374a6d78c2f35c4591c2db420b2466adb1cbfb72d7c5f7ca59f1ede0e7
+    name: metadefender_core
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/metadefender_core-5.14.2.tgz
+    version: 5.14.2
+  - apiVersion: v2
     appVersion: 5.14.0
-    created: "2025-05-22T11:42:51.895566+03:00"
+    created: "2025-06-23T16:55:04.811237274+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -18,7 +32,7 @@ entries:
   pvcchart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-05-22T11:42:51.895763+03:00"
+    created: "2025-06-23T16:55:04.812058026+03:00"
     description: A minimal chart that creates a PersistentVolumeClaim
     digest: 984866932cabd511c08ca919dcb96ccc6b797553c01ab5d9a87dc3ab958e84c8
     name: pvcchart
@@ -26,4 +40,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/pvcchart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-22T11:42:51.894307+03:00"
+generated: "2025-06-23T16:55:04.810429947+03:00"
