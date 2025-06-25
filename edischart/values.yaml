@@ -20,7 +20,7 @@ mdcore:
                name: metadefender
                key: db_user
      md-core:
-       replicas: 1
+       replicas: 2
        env:
          - name: MD_USER
            valueFrom:
@@ -108,4 +108,4 @@ mdcore:
         property: api_key
       - k8sKey: mdcore_license_key
         remoteKey: mdcore
-        property: mdcore_license_key
+        property: 
