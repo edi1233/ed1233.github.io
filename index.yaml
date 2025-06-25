@@ -1,3 +1,18 @@
 apiVersion: v1
-entries: {}
-generated: "2025-06-25T19:43:35.631788604+03:00"
+entries:
+  edischart:
+  - apiVersion: v2
+    appVersion: 5.14.2
+    created: "2025-06-25T19:45:05.750100625+03:00"
+    dependencies:
+    - name: mdcore
+      repository: file://charts/mdcore
+      version: 5.14.2
+    description: A Helm chart for Kubernetes
+    digest: 756decbd8b64a6f514ece6e0c360a99f006b1ee2a863d2073e3083ca626e2964
+    name: edischart
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/edischart-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-06-25T19:45:05.748419704+03:00"
