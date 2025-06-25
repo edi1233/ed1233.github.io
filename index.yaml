@@ -12,7 +12,7 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/edischart-1.0.0.tgz
     version: 1.0.0
-  metadefender_core:
+  mdcore:
   - apiVersion: v2
     appVersion: 5.14.2
     created: "2025-06-25T17:35:43.450135923+03:00"
