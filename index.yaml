@@ -1,9 +1,21 @@
 apiVersion: v1
 entries:
+  edischart:
+  - apiVersion: v2
+    created: "2025-06-25T17:35:43.448695327+03:00"
+    dependencies:
+    - name: metadefender_core
+      repository: file://charts/mdcore
+      version: 5.14.2
+    digest: 813bc8768345e75fa88f380440eadc01ba26af338eb5cadf8d3718e459abee08
+    name: edischart
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/edischart-1.0.0.tgz
+    version: 1.0.0
   metadefender_core:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-06-23T16:55:04.811972088+03:00"
+    created: "2025-06-25T17:35:43.450135923+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -17,7 +29,7 @@ entries:
     version: 5.14.2
   - apiVersion: v2
     appVersion: 5.14.0
-    created: "2025-06-23T16:55:04.811237274+03:00"
+    created: "2025-06-25T17:35:43.449428501+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -32,7 +44,7 @@ entries:
   pvcchart:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2025-06-23T16:55:04.812058026+03:00"
+    created: "2025-06-25T17:35:43.450227166+03:00"
     description: A minimal chart that creates a PersistentVolumeClaim
     digest: 984866932cabd511c08ca919dcb96ccc6b797553c01ab5d9a87dc3ab958e84c8
     name: pvcchart
@@ -40,4 +52,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/pvcchart-0.1.0.tgz
     version: 0.1.0
-generated: "2025-06-23T16:55:04.810429947+03:00"
+generated: "2025-06-25T17:35:43.44780789+03:00"
