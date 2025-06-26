@@ -3,7 +3,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-06-25T19:45:05.750100625+03:00"
+    created: "2025-06-26T11:16:48.157750524+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -15,4 +15,19 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/edischart-1.0.0.tgz
     version: 1.0.0
-generated: "2025-06-25T19:45:05.748419704+03:00"
+  harbor-wrapper:
+  - apiVersion: v2
+    appVersion: 1.14.0
+    created: "2025-06-26T11:16:48.160002605+03:00"
+    dependencies:
+    - name: harbor
+      repository: https://helm.goharbor.io
+      version: 1.14.0
+    description: A wrapper chart for deploying Harbor with custom values
+    digest: 6c389e2a5226043d3139daa8287f75cebfd1cc924a0069dd1df696e16137e504
+    name: harbor-wrapper
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/harbor-wrapper-1.0.0.tgz
+    version: 1.0.0
+generated: "2025-06-26T11:16:48.155535077+03:00"
