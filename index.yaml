@@ -3,13 +3,13 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-06-26T11:39:44.90701665+03:00"
+    created: "2025-06-26T17:31:09.429646714+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
       version: 5.14.2
     description: A Helm chart for Kubernetes
-    digest: 756decbd8b64a6f514ece6e0c360a99f006b1ee2a863d2073e3083ca626e2964
+    digest: 69fa570749403c739bc7a8a91d93b4b29b877d643abeed00b3e720ed8adebf4a
     name: edischart
     type: application
     urls:
@@ -18,7 +18,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-06-26T11:39:44.909531503+03:00"
+    created: "2025-06-26T17:31:09.431646534+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -30,4 +30,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/harbor-wrapper-1.0.0.tgz
     version: 1.0.0
-generated: "2025-06-26T11:39:44.905179798+03:00"
+generated: "2025-06-26T17:31:09.427906741+03:00"
