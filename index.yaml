@@ -3,7 +3,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-03T15:20:37.799540171+03:00"
+    created: "2025-07-03T16:19:11.623067885+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -18,7 +18,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-07-03T15:20:37.80247324+03:00"
+    created: "2025-07-03T16:19:11.625410094+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -33,16 +33,16 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-03T15:20:37.80337619+03:00"
+    created: "2025-07-03T16:19:11.626133989+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
       Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
       annotation for AWS and Azure. Added control flag to still use it for GCP '
-    digest: 5eb88555094ef2f34da592c19c62883e37cf2f55c894a333ed1162f1393fcb2b
+    digest: 65a13a1fc0f4f05ef0968b4dd02989a068270d959dcba9dc800e4a41ae43e82d
     name: mdcore
     type: application
     urls:
     - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.2.tgz
     version: 5.14.2
-generated: "2025-07-03T15:20:37.797329179+03:00"
+generated: "2025-07-03T16:19:11.621305115+03:00"
