@@ -1,0 +1,119 @@
+fullnameOverride: metadefender
+mdcore_license_key: "S9D2-gaj0-n2M6-j1EA-mChZ-bae8-S43z-uvCX"
+storage_provisioner: custom
+storage_name: metadefender-pvc
+env:
+  LICENSING_CLEANUP: true
+core_components:
+  postgres-core:
+    name: postgres-core
+    image: postgres:14.8
+    resources:
+      requests:
+        memory: "512Mi"      
+      limits:
+        memory: "1Gi"
+    env:
+      - name: POSTGRES_PASSWORD
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: db_password
+      - name: POSTGRES_USER
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: db_user
+  md-core:
+    service_type: ClusterIP
+    resources:
+      requests:
+        memory: "1Gi"      
+      limits:
+        memory: "1Gi"
+    replicas: 1
+    env:
+      - name: MD_USER
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: mdcore_user
+      - name: MD_PWD
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: mdcore_password
+      - name: MD_INSTANCE_NAME
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.name
+      - name: MY_POD_NAME
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.name
+      - name: MY_POD_NAMESPACE
+        valueFrom:
+          fieldRef:
+            fieldPath: metadata.namespace
+      - name: APIKEY
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: api_key
+      - name: DB_USER
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: db_user
+      - name: DB_PWD
+        valueFrom:
+          secretKeyRef:
+            name: metadefender
+            key: db_password
+    tls:
+      enabled: false
+secrets:
+  enabled: true
+  createSecretStore: true
+  vault:
+    address: http://vault.vault.svc:8200
+    path: k0s
+    version: v2
+    authPath: kubernetes
+    role: eso-role
+    serviceAccountName: eso-sa
+  items:
+    - k8sKey: mdcore_user
+      remoteKey: mdcore
+      property: mdcore_user
+    - k8sKey: mdcore_password
+      remoteKey: mdcore
+      property: mdcore_password
+    - k8sKey: db_user
+      remoteKey: mdcore
+      property: db_user
+    - k8sKey: db_password
+      remoteKey: mdcore
+      property: db_password
+    - k8sKey: api_key
+      remoteKey: mdcore
+      property: api_key
+    - k8sKey: mdcore_license_key
+      remoteKey: mdcore
+      property: mdcore_license_key    
+
+core_ingress:
+  enabled: true
+  host: mdcorelab.qa.payoneer.com
+  port: 8008
+  spec_className: true
+  class: ingress
+  tls: false
+  secret: ""
+
+pvc:
+  enabled: true
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: longhorn

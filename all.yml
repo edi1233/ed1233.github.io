@@ -1,0 +1,546 @@
+---
+# Source: mdcore/templates/config-template.yml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mdcore-postgres-cred
+  annotations:
+    "helm.sh/resource-policy": keep
+data:
+  user: cG9zdGdyZXM=
+  password: "ZjZ4RVVadEg4ZVVsbkF5SGdaSzRaM2x3"
+
+# add config-map for mdcore-import-zip-config
+
+# Generate, set or keep the MD Core credentials
+---
+# Source: mdcore/templates/config-template.yml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mdcore-cred
+  annotations:
+    "helm.sh/resource-policy": keep
+data:
+  user: YWRtaW4=
+  password: "MDdtQTFKS2RyMTE0QTVQU0JsNWxMTGZo"
+
+# Generate, set or keep the MD Core API key
+---
+# Source: mdcore/templates/config-template.yml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mdcore-api-key
+  annotations:
+    "helm.sh/resource-policy": keep
+data:
+  value: "OTAyNTkxMDI4NjE2ODgxMDI3NTY1NTI3NDk2NTYxNjMyNTgx"
+
+
+# Set or keep the MD Core license key
+---
+# Source: mdcore/templates/config-template.yml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mdcore-license-key
+  annotations:
+    "helm.sh/resource-policy": keep
+data:
+  value: UzlEMi1nYWowLW4yTTYtajFFQS1tQ2haLWJhZTgtUzQzei11dkNY
+---
+# Source: mdcore/templates/config-template.yml
+# Generate, set or keep the rabbitmq credentials
+
+# Generate new config for nas---
+kind: Secret
+apiVersion: v1
+metadata:
+  name: nas-cred
+  annotations:
+    "helm.sh/resource-policy": keep
+data:
+  nas_connection_key: "bGZBVmJWZ0VwUQ=="
+---
+# Source: mdcore/templates/config-template.yml
+kind: Secret
+apiVersion: v1
+metadata:
+  name: mdcore-stack-configs
+  annotations:
+    "helm.sh/resource-policy": keep
+stringData:
+  ometascan_hub.conf: |
+    {
+      "log": {
+        "streams": [
+          {
+            "log_type": "file",
+            "log_level": "info",
+            "log_format": "default",
+            "log_path": "/opt/ometascan-hub/hub_data/var/log/ometascan-hub/hub.log"
+          }
+        ]
+      },
+      "input": {
+        "technology": "rest",
+        "config": {
+          "port": 8889,
+          "log_path": "/opt/ometascan-hub/hub_data/var/log/ometascan-hub/nginx.log",
+          "log_level": "warning"
+        }
+      },
+      "cache": {
+        "technology": "redis",
+        "config": {
+          "host": "redis",
+          "port": 6379
+        }
+      },
+      "database": {
+        "technology": "postgres",
+        "config": {
+          "host": "postgres-core",
+          "port": 5432,
+          "user": "postgres",
+          "password": "f6xEUZtH8eUlnAyHgZK4Z3lw",
+          "dbname": "metadefender_core"
+        }
+      },
+      "broker": {
+        "technology": "rabbitmq",
+        "config": {
+          "host": "rabbitmq",
+          "port": 5672,
+        "user": "rabbitmq",
+        "password": "K34G0g1hSlwyc2eWhkBDIr5w"
+        }
+      },
+      "storage": {
+        "technology": "h2",
+        "config": {
+          "host": "md-nas",
+          "port": 8888,
+          "connection_key": "lfAVbVgEpQ"
+        }
+      }
+    }
+  ometascan_nas.conf: |
+    {
+      "connection_key": "lfAVbVgEpQ",
+      "log": {
+        "streams": [
+          {
+            "log_type": "file",
+            "log_level": "info",
+            "log_format": "default",
+            "log_path": "/opt/ometascan-nas/nas_data/var/log/ometascan-nas/nas.log"
+          }
+        ]
+      },
+      "server": {
+          "config": {
+                "port": 8888,
+                "key_path": "/etc/opswat/local.key",
+                "certificate_path": "/etc/opswat/local.cert",
+                "host": "0.0.0.0"
+          }
+      },
+      "storage": {
+        "paths": [
+          {
+          "path": "/opt/ometascan-nas/nas_data/ometascan",
+          "max_size_gb": 10
+          }
+        ]
+      }
+    }
+  IGNITION_JSON: |
+    {
+    "global/dbmode": 4,
+    "dbserver/type": "remote",
+    "dbserver/host": "postgres-core",
+    "dbserver/port": "5432",
+    "dbserver/user": "postgres",
+    "dbserver/password": "f6xEUZtH8eUlnAyHgZK4Z3lw",
+    "user/name": "admin", 
+    "user/password": "07mA1JKdr114A5PSBl5lLLfh",
+    "user/apikey":"902591028616881027565527496561632581"
+    }
+---
+# Source: mdcore/templates/config-template.yml
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: mdcore-env
+data:
+  REST_PORT: "8008"
+  DB_MODE:   "4"
+  DB_TYPE:   "remote"
+  DB_HOST:   "postgres-core"
+  DB_PORT:   "5432"
+  ACTIVATION_SERVER: activation.dl.opswat.com
+  CERT_PATH: "/cert"
+
+# Generate, set or keep the postgres database credentials
+---
+# Source: mdcore/templates/config-template.yml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: release-name-config
+data:
+  CORE_CONF_JSON: "{\"global/restaddress\": \"0.0.0.0\"}"
+  LICENSING_CLEANUP: "true"
+  MDCORE_CERT_PASSPHRASE: ""
+  MDCORE_HEALTH_CHECK: "true"
+  MDCORE_LICENSE_COMMENT: ""
+  MDCORE_MINIMUM_NUMBER_AV: "0"
+  MDCORE_QUEUE_THRESHOLD: "0"
+  MDCORE_REQUIRED_ENGINES: ""
+  MDCORE_SSL_ADVANCED_CONFIGS: ""
+  MDCORE_SSL_PROTOCOLS: ""
+  MDCORE_UPGRADE_FROM_DB_NAME: "metadefender_core"
+  MIGRATE_HISTORY: "false"
+  OLMS_COMMENT: ""
+  OLMS_CONNECTION_TYPE: ""
+  OLMS_HOST_URL: ""
+  OLMS_PROXY_PASSWORD: ""
+  OLMS_PROXY_PORT: ""
+  OLMS_PROXY_SERVER: ""
+  OLMS_PROXY_TYPE: ""
+  OLMS_PROXY_USERNAME: ""
+  OLMS_REST_PORT: ""
+  OLMS_RULE: ""
+  OLMS_SOCKET_PORT: ""
+  OLMS_TOKEN: ""
+  OLMS_USE_PROXY: "false"
+  PROXY: "false"
+  PROXY_EXCLUSION: ""
+  PROXY_HOST: ""
+  PROXY_PORT: "8080"
+  PROXY_PWD: ""
+  PROXY_USER: ""
+  UPGRADE_DB: "false"
+---
+# Source: mdcore/templates/config-template.yml
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: wait-for-hub-services
+data:
+  wait-for-hub-services.sh: |
+    #!/bin/sh
+    echo "MD HUB not loaded, skipping..."
+---
+# Source: mdcore/templates/storage-template.yml
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: metadefender-pvc
+  labels:
+    app: "my-app"
+  annotations:
+spec:
+  accessModes:
+    - "ReadWriteOnce"
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: "longhorn"
+  volumeMode: "Filesystem"
+---
+# Source: mdcore/templates/services-template.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: "md-core"
+spec:
+  ports:
+    - name: "8008"
+      port: 8008
+      targetPort: 8008
+  type: ClusterIP
+  sessionAffinity: None
+  selector:
+      app: "md-core"
+status:
+  loadBalancer: {}
+---
+# Source: mdcore/templates/services-template.yml
+apiVersion: v1
+kind: Service
+metadata:
+  name: "postgres-core"
+spec:
+  ports:
+    - name: "5432"
+      port: 5432
+      targetPort: 5432
+  selector:
+      app: "postgres-core"
+status:
+  loadBalancer: {}
+---
+# Source: mdcore/templates/deployments-template.yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "md-core"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: "md-core"
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: "md-core"
+        aws-type: fargate
+        name: md-core
+    spec:
+      containers:
+        - envFrom:
+            - configMapRef:
+                name: mdcore-env
+            - configMapRef:
+                name: release-name-config
+          image: "opswat/metadefendercore-debian:5.14.2"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: MD_USER
+              valueFrom:
+                secretKeyRef:
+                  key: mdcore_user
+                  name: metadefender
+            - name: MD_PWD
+              valueFrom:
+                secretKeyRef:
+                  key: mdcore_password
+                  name: metadefender
+            - name: MD_INSTANCE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: MY_POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
+            - name: MY_POD_NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            - name: APIKEY
+              valueFrom:
+                secretKeyRef:
+                  key: api_key
+                  name: metadefender
+            - name: DB_USER
+              valueFrom:
+                secretKeyRef:
+                  key: db_user
+                  name: metadefender
+            - name: DB_PWD
+              valueFrom:
+                secretKeyRef:
+                  key: db_password
+                  name: metadefender
+          name: "md-core"
+          ports:
+            - containerPort: 8008
+          livenessProbe:
+            failureThreshold: 3
+            httpGet:
+              path: /readyz
+              port: 8008
+            initialDelaySeconds: 90
+            periodSeconds: 10
+            timeoutSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /readyz
+              port: 8008
+            initialDelaySeconds: 60
+            periodSeconds: 10
+            timeoutSeconds: 10
+          resources:
+            limits:
+              memory: 1Gi
+            requests:
+              cpu: "4.0"
+              ephemeral-storage: 60Gi
+              memory: 1Gi
+      initContainers:
+        - command:
+          - sh
+          - -c
+          - until pg_isready -h $DB_HOST -p $DB_PORT; do echo waiting for database; sleep
+            2; done;
+          envFrom:
+          - configMapRef:
+              name: mdcore-env
+          image: opswat/metadefendercore-debian:5.14.2
+          imagePullPolicy: IfNotPresent
+          name: check-db-ready
+      restartPolicy: Always
+---
+# Source: mdcore/templates/deployments-template.yml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "postgres-core"
+spec:
+  replicas: 
+  selector:
+    matchLabels:
+      app: "postgres-core"
+  template:
+    metadata:
+      labels:
+        app: "postgres-core"
+    spec:
+      containers:
+        - envFrom:
+            - configMapRef:
+                name: mdcore-env
+            - configMapRef:
+                name: release-name-config
+          image: "postgres:14.8"
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: POSTGRES_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  key: db_password
+                  name: metadefender
+            - name: POSTGRES_USER
+              valueFrom:
+                secretKeyRef:
+                  key: db_user
+                  name: metadefender
+          name: "postgres-core"
+          ports:
+            - containerPort: 5432
+          volumeMounts:
+            - name: postgres-core
+              mountPath: /var/lib/postgresql/data
+              subPath: postgres-core
+            
+          resources:
+            limits:
+              memory: 1Gi
+            requests:
+              memory: 512Mi
+      restartPolicy: Always
+      volumes:
+        - name: postgres-core
+          persistentVolumeClaim:
+            claimName: metadefender-pvc
+---
+# Source: mdcore/templates/ingress-template.yml
+kind: Ingress
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: core-ingress
+  annotations:
+    
+    ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/affinity: cookie
+    
+    
+
+spec:
+  
+  ingressClassName: ingress
+  
+  
+  rules:
+  - host: mdcorelab.qa.payoneer.com
+    http:
+      paths:
+        - path: /
+          pathType: Prefix
+          backend:
+            service:
+              name: md-core
+              port:
+                number: 8008
+---
+# Source: mdcore/templates/deployments-template.yml
+# Create a deployment for each component in MD Core if it's enabled
+---
+# Source: mdcore/templates/hpa-template.yml
+# Create an hpa for the md core deployment
+---
+# Source: mdcore/templates/services-template.yml
+# Create a service for each component in MD Core it has exposed ports
+---
+# Source: mdcore/templates/externalsecret.yml
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: metadefender
+  namespace: default
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-weight": "-10"
+spec:
+  refreshInterval: 
+  secretStoreRef:
+    name: metadefender
+    kind: SecretStore
+  target:
+    name: metadefender
+    creationPolicy: Owner
+  data:
+    - secretKey: mdcore_user
+      remoteRef:
+        key: mdcore         # full Vault path, e.g., "secret/data/myapp"
+        property: mdcore_user     # the actual field inside the secret, e.g., "username"
+    - secretKey: mdcore_password
+      remoteRef:
+        key: mdcore         # full Vault path, e.g., "secret/data/myapp"
+        property: mdcore_password     # the actual field inside the secret, e.g., "username"
+    - secretKey: db_user
+      remoteRef:
+        key: mdcore         # full Vault path, e.g., "secret/data/myapp"
+        property: db_user     # the actual field inside the secret, e.g., "username"
+    - secretKey: db_password
+      remoteRef:
+        key: mdcore         # full Vault path, e.g., "secret/data/myapp"
+        property: db_password     # the actual field inside the secret, e.g., "username"
+    - secretKey: api_key
+      remoteRef:
+        key: mdcore         # full Vault path, e.g., "secret/data/myapp"
+        property: api_key     # the actual field inside the secret, e.g., "username"
+    - secretKey: mdcore_license_key
+      remoteRef:
+        key: mdcore         # full Vault path, e.g., "secret/data/myapp"
+        property: mdcore_license_key     # the actual field inside the secret, e.g., "username"
+---
+# Source: mdcore/templates/secretstore.yml
+apiVersion: external-secrets.io/v1
+kind: SecretStore
+metadata:
+  name: metadefender
+  namespace: default
+  annotations:
+    "helm.sh/hook": pre-install,pre-upgrade
+    "helm.sh/hook-weight": "-10"
+spec:
+  provider:
+    vault:
+      server: 
+      path: k0s  # <- your KV mount path
+      version: v2
+      auth:
+        kubernetes:
+          mountPath: kubernetes
+          role: eso-role
+          serviceAccountRef:
+            name: eso-sa
