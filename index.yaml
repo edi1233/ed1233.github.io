@@ -3,7 +3,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-03T16:19:11.623067885+03:00"
+    created: "2025-07-03T16:33:18.563895676+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -18,7 +18,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-07-03T16:19:11.625410094+03:00"
+    created: "2025-07-03T16:33:18.565901691+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -32,8 +32,22 @@ entries:
     version: 1.0.0
   mdcore:
   - apiVersion: v2
+    appVersion: 5.14.3
+    created: "2025-07-03T16:33:18.568049686+03:00"
+    description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
+      in a Kubernetes cluster.   Release Notes - Environment variables to migrate
+      processing history (Pre-steps needed) - Environment variables to enable Licensing
+      Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
+      annotation for AWS and Azure. Added control flag to still use it for GCP '
+    digest: 0ceb410296973a7da88f1bf5bdde85ad1f660c667e3058413902a3edf316a24a
+    name: mdcore
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.3.tgz
+    version: 5.14.3
+  - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-03T16:19:11.626133989+03:00"
+    created: "2025-07-03T16:33:18.566659837+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -45,4 +59,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.2.tgz
     version: 5.14.2
-generated: "2025-07-03T16:19:11.621305115+03:00"
+generated: "2025-07-03T16:33:18.561861885+03:00"
