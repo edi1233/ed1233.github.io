@@ -3,7 +3,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-07T09:55:19.401177152+03:00"
+    created: "2025-07-07T18:04:52.542670167+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -18,7 +18,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-07-07T09:55:19.403169522+03:00"
+    created: "2025-07-07T18:04:52.546610475+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -33,13 +33,13 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2025-07-07T09:55:19.406992687+03:00"
+    created: "2025-07-07T18:04:52.55080919+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
       Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
       annotation for AWS and Azure. Added control flag to still use it for GCP '
-    digest: 837e32e8e6f63ad82051d04f70b2c1af55917b1a68968fffaed9e3e48faf4b3b
+    digest: 0ee61b4759aa44299f718f8a42d56fe9b16232033326a1743ec6c556f1d53b3d
     name: mdcore
     type: application
     urls:
@@ -47,7 +47,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2025-07-07T09:55:19.406309054+03:00"
+    created: "2025-07-07T18:04:52.550085923+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -61,7 +61,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-07-07T09:55:19.405541636+03:00"
+    created: "2025-07-07T18:04:52.549015237+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -75,7 +75,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-07T09:55:19.404111714+03:00"
+    created: "2025-07-07T18:04:52.547734034+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -87,4 +87,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.2.tgz
     version: 5.14.2
-generated: "2025-07-07T09:55:19.399079446+03:00"
+generated: "2025-07-07T18:04:52.540413738+03:00"
