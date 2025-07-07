@@ -3,7 +3,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-03T16:51:11.967305109+03:00"
+    created: "2025-07-07T09:55:19.401177152+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -18,7 +18,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-07-03T16:51:11.969201674+03:00"
+    created: "2025-07-07T09:55:19.403169522+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -32,14 +32,28 @@ entries:
     version: 1.0.0
   mdcore:
   - apiVersion: v2
-    appVersion: 5.14.4
-    created: "2025-07-03T16:51:11.971852201+03:00"
+    appVersion: 5.14.6
+    created: "2025-07-07T09:55:19.406992687+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
       Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
       annotation for AWS and Azure. Added control flag to still use it for GCP '
-    digest: 3faf362d57bbb5cd4cd27b7c9a8e3e3ca5611e95bf6be115f6e1c9f03d91dc93
+    digest: 837e32e8e6f63ad82051d04f70b2c1af55917b1a68968fffaed9e3e48faf4b3b
+    name: mdcore
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.6.tgz
+    version: 5.14.6
+  - apiVersion: v2
+    appVersion: 5.14.4
+    created: "2025-07-07T09:55:19.406309054+03:00"
+    description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
+      in a Kubernetes cluster.   Release Notes - Environment variables to migrate
+      processing history (Pre-steps needed) - Environment variables to enable Licensing
+      Cleanup and examples for Role/Rolebinding - Fixed warning of kubernetes.io/ingress.class
+      annotation for AWS and Azure. Added control flag to still use it for GCP '
+    digest: 09a5a9bcab88b8c929972f2c8b183b79114fb9b3191e423c54928bbf25b12eb3
     name: mdcore
     type: application
     urls:
@@ -47,7 +61,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-07-03T16:51:11.971134985+03:00"
+    created: "2025-07-07T09:55:19.405541636+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -61,7 +75,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-07-03T16:51:11.969879139+03:00"
+    created: "2025-07-07T09:55:19.404111714+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -73,4 +87,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.2.tgz
     version: 5.14.2
-generated: "2025-07-03T16:51:11.965569458+03:00"
+generated: "2025-07-07T09:55:19.399079446+03:00"
