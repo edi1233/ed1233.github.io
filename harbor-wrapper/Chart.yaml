@@ -1,0 +1,10 @@
+apiVersion: v2
+appVersion: 1.14.0
+dependencies:
+- name: harbor
+  repository: https://helm.goharbor.io
+  version: 1.14.0
+description: A wrapper chart for deploying Harbor with custom values
+name: harbor-wrapper
+type: application
+version: 1.0.0

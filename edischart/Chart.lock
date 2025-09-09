@@ -1,0 +1,6 @@
+dependencies:
+- name: mdcore
+  repository: file://charts/mdcore
+  version: 5.14.2
+digest: sha256:2548819573f4be98f62ddeece8c3bfed798d53090541fcbf0517ee32015cecba
+generated: "2025-06-25T18:39:57.840779441+03:00"
