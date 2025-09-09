@@ -3,7 +3,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-09-09T10:09:04.52108+03:00"
+    created: "2025-09-09T10:53:03.597573+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -18,7 +18,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-09-09T10:09:04.523571+03:00"
+    created: "2025-09-09T10:53:03.600541+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -33,7 +33,7 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-09-09T10:09:04.529368+03:00"
+    created: "2025-09-09T10:53:03.605966+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -47,7 +47,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-09-09T10:09:04.5285+03:00"
+    created: "2025-09-09T10:53:03.6051+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -61,7 +61,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2025-09-09T10:09:04.527636+03:00"
+    created: "2025-09-09T10:53:03.60425+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -75,7 +75,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2025-09-09T10:09:04.526733+03:00"
+    created: "2025-09-09T10:53:03.603416+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -89,7 +89,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-09-09T10:09:04.52565+03:00"
+    created: "2025-09-09T10:53:03.60258+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -103,7 +103,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-09-09T10:09:04.524605+03:00"
+    created: "2025-09-09T10:53:03.601575+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -117,16 +117,16 @@ entries:
     version: 5.14.2
   pxmetallb:
   - apiVersion: v2
-    created: "2025-09-09T10:09:04.5317+03:00"
+    created: "2025-09-09T10:53:03.6082+03:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
       version: 0.15.2
     description: A Helm chart for Kubernetes
-    digest: 48b362843a386f6d41f82e7f2a22b5e31b48136d41eb219dc9a0c4edc4d23d8c
+    digest: 1bf03e34dc2942e183ccc56b85a9f8fea3b470ea7f612fab4a6e7bb78f70d327
     name: pxmetallb
     type: application
     urls:
     - https://edi1233.github.io/ed1233.github.io/pxmetallb-1.0.0.tgz
     version: 1.0.0
-generated: "2025-09-09T10:09:04.517425+03:00"
+generated: "2025-09-09T10:53:03.59449+03:00"
