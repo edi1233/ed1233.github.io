@@ -10,7 +10,7 @@ entries:
         url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
     apiVersion: v2
     appVersion: v1.18.2
-    created: "2025-09-13T20:28:54.219781872+03:00"
+    created: "2025-09-17T14:18:46.612767+03:00"
     description: A Helm chart for cert-manager
     digest: f0323bdb3e140f4d207d7fdf46bb817f27cafdc1a75269f0644412a68443ee33
     home: https://cert-manager.io
@@ -34,7 +34,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-09-13T20:28:54.221459414+03:00"
+    created: "2025-09-17T14:18:46.614835+03:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -48,7 +48,7 @@ entries:
     version: 1.0.0
   gitrunner:
   - apiVersion: v2
-    created: "2025-09-13T20:28:54.227009515+03:00"
+    created: "2025-09-17T14:18:46.620407+03:00"
     dependencies:
     - name: actions-runner-controller
       repository: https://actions-runner-controller.github.io/actions-runner-controller
@@ -63,7 +63,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-09-13T20:28:54.229023228+03:00"
+    created: "2025-09-17T14:18:46.622509+03:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -78,7 +78,7 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-09-13T20:28:54.234105228+03:00"
+    created: "2025-09-17T14:18:46.627778+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -92,7 +92,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-09-13T20:28:54.233336635+03:00"
+    created: "2025-09-17T14:18:46.626966+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -106,7 +106,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2025-09-13T20:28:54.232559013+03:00"
+    created: "2025-09-17T14:18:46.626154+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -120,7 +120,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2025-09-13T20:28:54.231668239+03:00"
+    created: "2025-09-17T14:18:46.625322+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -134,7 +134,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-09-13T20:28:54.230940411+03:00"
+    created: "2025-09-17T14:18:46.624478+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -148,7 +148,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-09-13T20:28:54.230089863+03:00"
+    created: "2025-09-17T14:18:46.623494+03:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -160,9 +160,24 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/mdcore-5.14.2.tgz
     version: 5.14.2
+  px-awx:
+  - apiVersion: v2
+    appVersion: 2.19.1
+    created: "2025-09-17T14:18:46.628649+03:00"
+    dependencies:
+    - name: awx-operator
+      repository: https://ansible-community.github.io/awx-operator-helm/
+      version: 2.19.1
+    description: A Helm chart for Kubernetes
+    digest: edb00224721959ca07d3f36241f6476c3edd13aee8384016f4c1e756e5a3d57b
+    name: px-awx
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/px-awx-1.0.0.tgz
+    version: 1.0.0
   pxmetallb:
   - apiVersion: v2
-    created: "2025-09-13T20:28:54.236700406+03:00"
+    created: "2025-09-17T14:18:46.630697+03:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
@@ -174,4 +189,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/pxmetallb-1.0.0.tgz
     version: 1.0.0
-generated: "2025-09-13T20:28:54.213562043+03:00"
+generated: "2025-09-17T14:18:46.605792+03:00"
