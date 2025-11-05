@@ -1,40 +1,23 @@
 apiVersion: v1
 entries:
-  cert-manager:
-  - annotations:
-      artifacthub.io/category: security
-      artifacthub.io/license: Apache-2.0
-      artifacthub.io/prerelease: "false"
-      artifacthub.io/signKey: |
-        fingerprint: 1020CF3C033D4F35BAE1C19E1226061C665DF13E
-        url: https://cert-manager.io/public-keys/cert-manager-keyring-2021-09-20-1020CF3C033D4F35BAE1C19E1226061C665DF13E.gpg
-    apiVersion: v2
-    appVersion: v1.18.2
-    created: "2025-11-04T21:41:48.021828+02:00"
-    description: A Helm chart for cert-manager
-    digest: f0323bdb3e140f4d207d7fdf46bb817f27cafdc1a75269f0644412a68443ee33
-    home: https://cert-manager.io
-    icon: https://raw.githubusercontent.com/cert-manager/community/4d35a69437d21b76322157e6284be4cd64e6d2b7/logo/logo-small.png
-    keywords:
-    - cert-manager
-    - kube-lego
-    - letsencrypt
-    - tls
-    kubeVersion: '>= 1.22.0-0'
-    maintainers:
-    - email: cert-manager-maintainers@googlegroups.com
-      name: cert-manager-maintainers
-      url: https://cert-manager.io
-    name: cert-manager
-    sources:
-    - https://github.com/cert-manager/cert-manager
+  PXCertManager:
+  - apiVersion: v2
+    created: "2025-11-05T15:50:30.067288+02:00"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: 1.18.2
+    description: A Helm chart for Kubernetes
+    digest: c35d12b991e5678ae255bcba366f3f7e53f7c04ef7c585c2831b32d3233856eb
+    name: PXCertManager
+    type: application
     urls:
-    - https://edi1233.github.io/ed1233.github.io/cert-manager-v1.18.2.tgz
-    version: v1.18.2
+    - https://edi1233.github.io/ed1233.github.io/PXCertManager-1.0.0.tgz
+    version: 1.0.0
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-11-04T21:41:48.02379+02:00"
+    created: "2025-11-05T15:50:30.069679+02:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -48,7 +31,7 @@ entries:
     version: 1.0.0
   gitrunner:
   - apiVersion: v2
-    created: "2025-11-04T21:41:48.028869+02:00"
+    created: "2025-11-05T15:50:30.07488+02:00"
     dependencies:
     - name: actions-runner-controller
       repository: https://actions-runner-controller.github.io/actions-runner-controller
@@ -63,7 +46,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-11-04T21:41:48.030921+02:00"
+    created: "2025-11-05T15:50:30.076898+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -78,7 +61,7 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-11-04T21:41:48.036692+02:00"
+    created: "2025-11-05T15:50:30.082527+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -92,7 +75,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-11-04T21:41:48.035846+02:00"
+    created: "2025-11-05T15:50:30.081708+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -106,7 +89,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2025-11-04T21:41:48.035032+02:00"
+    created: "2025-11-05T15:50:30.080855+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -120,7 +103,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2025-11-04T21:41:48.034144+02:00"
+    created: "2025-11-05T15:50:30.079788+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -134,7 +117,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-11-04T21:41:48.033258+02:00"
+    created: "2025-11-05T15:50:30.078928+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -148,7 +131,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-11-04T21:41:48.032043+02:00"
+    created: "2025-11-05T15:50:30.077935+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -162,7 +145,7 @@ entries:
     version: 5.14.2
   px-awx:
   - apiVersion: v2
-    created: "2025-11-04T21:41:48.041023+02:00"
+    created: "2025-11-05T15:50:30.086625+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -175,7 +158,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v2
-    created: "2025-11-04T21:41:48.040123+02:00"
+    created: "2025-11-05T15:50:30.085693+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -188,7 +171,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2025-11-04T21:41:48.039076+02:00"
+    created: "2025-11-05T15:50:30.084602+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -202,7 +185,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.19.1
-    created: "2025-11-04T21:41:48.037828+02:00"
+    created: "2025-11-05T15:50:30.083631+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -216,7 +199,7 @@ entries:
     version: 1.0.0
   pxmetallb:
   - apiVersion: v2
-    created: "2025-11-04T21:41:48.042764+02:00"
+    created: "2025-11-05T15:50:30.088742+02:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
@@ -230,7 +213,7 @@ entries:
     version: 1.0.0
   storage:
   - apiVersion: v2
-    created: "2025-11-04T21:41:48.045389+02:00"
+    created: "2025-11-05T15:50:30.091251+02:00"
     dependencies:
     - name: longhorn
       repository: https://charts.longhorn.io
@@ -242,4 +225,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/storage-1.0.0.tgz
     version: 1.0.0
-generated: "2025-11-04T21:41:48.015275+02:00"
+generated: "2025-11-05T15:50:30.060949+02:00"
