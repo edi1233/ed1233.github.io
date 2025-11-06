@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   PXCertManager:
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.712284+02:00"
+    created: "2025-11-06T17:22:50.877807+02:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -17,7 +17,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-11-06T14:35:05.714433+02:00"
+    created: "2025-11-06T17:22:50.879937+02:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -31,7 +31,7 @@ entries:
     version: 1.0.0
   gitrunner:
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.719516+02:00"
+    created: "2025-11-06T17:22:50.885344+02:00"
     dependencies:
     - name: actions-runner-controller
       repository: https://actions-runner-controller.github.io/actions-runner-controller
@@ -46,7 +46,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-11-06T14:35:05.721595+02:00"
+    created: "2025-11-06T17:22:50.887434+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -61,7 +61,7 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-11-06T14:35:05.726935+02:00"
+    created: "2025-11-06T17:22:50.893714+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -75,7 +75,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-11-06T14:35:05.726117+02:00"
+    created: "2025-11-06T17:22:50.892641+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -89,7 +89,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2025-11-06T14:35:05.725282+02:00"
+    created: "2025-11-06T17:22:50.891856+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -103,7 +103,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2025-11-06T14:35:05.724482+02:00"
+    created: "2025-11-06T17:22:50.891016+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -117,7 +117,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-11-06T14:35:05.723667+02:00"
+    created: "2025-11-06T17:22:50.890184+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -131,7 +131,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-11-06T14:35:05.722814+02:00"
+    created: "2025-11-06T17:22:50.889166+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -146,9 +146,9 @@ entries:
   phpipam:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-11-06T14:35:05.727414+02:00"
+    created: "2025-11-06T17:22:50.893979+02:00"
     description: A Helm chart for Kubernetes
-    digest: f8d85ffe3c1dca99450ec51b8e90bacd20062a9d9027aab904dfbf523a36aa99
+    digest: 3cf6c71eef7ce641b8e3233e47048ad20a0525db734544ff196c62bd456fe028
     name: phpipam
     type: application
     urls:
@@ -156,7 +156,7 @@ entries:
     version: 1.0.0
   px-awx:
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.730062+02:00"
+    created: "2025-11-06T17:22:50.897773+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -169,7 +169,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.729408+02:00"
+    created: "2025-11-06T17:22:50.896844+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -182,7 +182,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.728769+02:00"
+    created: "2025-11-06T17:22:50.895889+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -196,7 +196,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.19.1
-    created: "2025-11-06T14:35:05.728144+02:00"
+    created: "2025-11-06T17:22:50.894915+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -210,7 +210,7 @@ entries:
     version: 1.0.0
   pxmetallb:
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.732068+02:00"
+    created: "2025-11-06T17:22:50.899931+02:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
@@ -224,7 +224,7 @@ entries:
     version: 1.0.0
   storage:
   - apiVersion: v2
-    created: "2025-11-06T14:35:05.734035+02:00"
+    created: "2025-11-06T17:22:50.90247+02:00"
     dependencies:
     - name: longhorn
       repository: https://charts.longhorn.io
@@ -236,4 +236,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/storage-1.0.0.tgz
     version: 1.0.0
-generated: "2025-11-06T14:35:05.706422+02:00"
+generated: "2025-11-06T17:22:50.870533+02:00"
