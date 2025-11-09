@@ -1,0 +1,121 @@
+# 🧩 Replica settings
+replicaCount: 1
+
+# 🐳 Image configuration
+image:
+  repository: technitium/dns-server
+  tag: latest
+  pullPolicy: IfNotPresent
+
+# ⚙️ Service configuration
+service:
+  # Service type: ClusterIP | NodePort | LoadBalancer
+  type: ClusterIP
+
+  # Ports
+  portWeb: 5380
+  portDnsTcp: 53
+  portDnsUdp: 53
+
+  # NodePort (optional, used only if type = NodePort)
+  nodePorts:
+    dnsTcp: null       # Example: 30053
+    dnsUdp: null       # Example: 30053
+    web: null          # Example: 30580
+
+  # LoadBalancer options (optional)
+  loadBalancerIP: null           # Example: 192.168.1.53 for MetalLB
+  loadBalancerSourceRanges: []   # Example: ["192.168.1.0/24"]
+
+# 🌍 Ingress configuration
+ingress:
+  enabled: true
+  className: nginx
+  host: dns.local
+  tlsEnabled: true
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/backend-protocol: "HTTP"
+
+# 💾 Persistent storage
+persistence:
+  enabled: true                    # Set to false to use emptyDir (ephemeral storage)
+  accessMode: ReadWriteOnce
+  size: 5Gi                        # Adjust size for your deployment
+  storageClass: ""                 # e.g. "longhorn", "gp3", or leave empty for default
+
+# 🧮 Resource requests/limits
+resources:
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  limits:
+    cpu: 800m
+    memory: 512Mi
+
+# 🧭 Node scheduling and placement
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+# Example (optional)
+# nodeSelector:
+#   role: dns
+#
+# affinity:
+#   nodeAffinity:
+#     requiredDuringSchedulingIgnoredDuringExecution:
+#       nodeSelectorTerms:
+#         - matchExpressions:
+#             - key: role
+#               operator: In
+#               values: ["dns"]
+#   podAntiAffinity:
+#     preferredDuringSchedulingIgnoredDuringExecution:
+#       - weight: 100
+#         podAffinityTerm:
+#           labelSelector:
+#             matchExpressions:
+#               - key: app
+#                 operator: In
+#                 values: ["technitium"]
+#           topologyKey: kubernetes.io/hostname
+#
+# tolerations:
+#   - key: "node-role.kubernetes.io/master"
+#     operator: "Exists"
+#     effect: "NoSchedule"
+
+# 🔐 Environment variables
+env:
+  DNS_SERVER_DOMAIN: dns.local
+  WEB_SERVICE_ENABLE: "true"
+  WEB_SERVICE_HTTP_PORT: "5380"
+  WEB_SERVICE_USE_HTTPS: "false"
+
+# 🏷️ Pod annotations and labels
+podAnnotations: {}
+podLabels: {}
+
+# Example (optional)
+# podAnnotations:
+#   prometheus.io/scrape: "true"
+#   prometheus.io/port: "5380"
+
+# 📈 Optional ServiceMonitor (for Prometheus Operator)
+serviceMonitor:
+  enabled: false
+  interval: 30s
+  port: web
+
+# 🧰 Init containers (optional, e.g., fix permissions)
+initContainers: []
+# Example:
+# initContainers:
+#   - name: fix-permissions
+#     image: busybox
+#     command: ["sh", "-c", "chown -R 1000:1000 /etc/dns/config"]
+#     volumeMounts:
+#       - name: technitium-config
+#         mountPath: /etc/dns/config
