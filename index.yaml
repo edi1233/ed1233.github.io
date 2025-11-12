@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   PXCertManager:
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.805841+02:00"
+    created: "2025-11-12T14:15:13.561239+02:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -15,7 +15,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/PXCertManager-1.0.1.tgz
     version: 1.0.1
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.797399+02:00"
+    created: "2025-11-12T14:15:13.552851+02:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -30,7 +30,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-11-11T22:03:12.807796+02:00"
+    created: "2025-11-12T14:15:13.56309+02:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -44,7 +44,7 @@ entries:
     version: 1.0.0
   gitrunner:
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.812516+02:00"
+    created: "2025-11-12T14:15:13.567961+02:00"
     dependencies:
     - name: actions-runner-controller
       repository: https://actions-runner-controller.github.io/actions-runner-controller
@@ -59,7 +59,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2025-11-11T22:03:12.814661+02:00"
+    created: "2025-11-12T14:15:13.569824+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -73,89 +73,22 @@ entries:
     version: 1.0.0
   mariadb-operator:
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.833862+02:00"
+    created: "2025-11-12T14:15:13.573489+02:00"
     dependencies:
-    - name: mariadb-operator-crds
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 0.38.0
     - name: mariadb-operator
       repository: https://mariadb-operator.github.io/mariadb-operator
       version: 25.10.0
     description: A Helm chart for Kubernetes
-    digest: 45bb915c2ba633cb988c72d084f5114f3091edb0f2fc7e1eb17c500c0105a3b8
+    digest: 8b0a0ea63bea4fdc064c0e63a9785c1ee85b679613fcb92152a792df46cf4b52
     name: mariadb-operator
     type: application
     urls:
     - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.5.tgz
     version: 1.0.5
-  - apiVersion: v2
-    created: "2025-11-11T22:03:12.830712+02:00"
-    dependencies:
-    - name: mariadb-operator-crds
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 0.38.0
-    - name: mariadb-operator
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 25.10.0
-    description: A Helm chart for Kubernetes
-    digest: 893e7f9abe580df982c08f2f3173c22cf7d65395cc4c357ae0bf6e50b8cec0d9
-    name: mariadb-operator
-    type: application
-    urls:
-    - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.4.tgz
-    version: 1.0.4
-  - apiVersion: v2
-    created: "2025-11-11T22:03:12.826273+02:00"
-    dependencies:
-    - name: mariadb-operator-crds
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 0.38.0
-    - name: mariadb-operator
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 25.10.0
-    description: A Helm chart for Kubernetes
-    digest: b219f47fcb24b7b21904c864de8d3abbafc7aca154fb04bfb138d604430ea0b4
-    name: mariadb-operator
-    type: application
-    urls:
-    - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.3.tgz
-    version: 1.0.3
-  - apiVersion: v2
-    created: "2025-11-11T22:03:12.822408+02:00"
-    dependencies:
-    - name: mariadb-operator-crds
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 0.38.0
-    - name: mariadb-operator
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 25.10.0
-    description: A Helm chart for Kubernetes
-    digest: 0a2919f55917b5c3af3db099458a05442405f6b7752b224869cd718cb7c94f90
-    name: mariadb-operator
-    type: application
-    urls:
-    - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.2.tgz
-    version: 1.0.2
-  - apiVersion: v2
-    created: "2025-11-11T22:03:12.818676+02:00"
-    dependencies:
-    - name: mariadb-operator-crds
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 0.38.0
-    - name: mariadb-operator
-      repository: https://mariadb-operator.github.io/mariadb-operator
-      version: 25.10.0
-    description: A Helm chart for Kubernetes
-    digest: 0bc6def2f581a6e1e6ccc3c336f236dece2fd560d6dfe5c81d6bcea77400a883
-    name: mariadb-operator
-    type: application
-    urls:
-    - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.1.tgz
-    version: 1.0.1
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-11-11T22:03:12.840173+02:00"
+    created: "2025-11-12T14:15:13.578675+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -169,7 +102,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2025-11-11T22:03:12.839037+02:00"
+    created: "2025-11-12T14:15:13.57791+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -183,7 +116,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2025-11-11T22:03:12.838255+02:00"
+    created: "2025-11-12T14:15:13.577151+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -197,7 +130,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2025-11-11T22:03:12.837479+02:00"
+    created: "2025-11-12T14:15:13.576052+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -211,7 +144,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2025-11-11T22:03:12.83616+02:00"
+    created: "2025-11-12T14:15:13.575264+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -225,7 +158,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2025-11-11T22:03:12.835241+02:00"
+    created: "2025-11-12T14:15:13.574417+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -240,7 +173,7 @@ entries:
   phpipam:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-11-11T22:03:12.840584+02:00"
+    created: "2025-11-12T14:15:13.579123+02:00"
     description: A Helm chart for Kubernetes
     digest: 359af1ab7a78b73aa3d241096ae0df1b3d64ba92ab1764fef99d2b6420af7f9d
     name: phpipam
@@ -250,7 +183,7 @@ entries:
     version: 1.0.0
   px-awx:
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.843947+02:00"
+    created: "2025-11-12T14:15:13.582889+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -263,7 +196,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.843122+02:00"
+    created: "2025-11-12T14:15:13.58203+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -276,7 +209,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.842324+02:00"
+    created: "2025-11-12T14:15:13.581023+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -290,7 +223,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.19.1
-    created: "2025-11-11T22:03:12.841445+02:00"
+    created: "2025-11-12T14:15:13.580084+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -304,7 +237,7 @@ entries:
     version: 1.0.0
   pxmetallb:
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.846136+02:00"
+    created: "2025-11-12T14:15:13.584787+02:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
@@ -318,7 +251,7 @@ entries:
     version: 1.0.0
   storage:
   - apiVersion: v2
-    created: "2025-11-11T22:03:12.848344+02:00"
+    created: "2025-11-12T14:15:13.587256+02:00"
     dependencies:
     - name: longhorn
       repository: https://charts.longhorn.io
@@ -333,7 +266,7 @@ entries:
   technitium:
   - apiVersion: v2
     appVersion: latest
-    created: "2025-11-11T22:03:12.848929+02:00"
+    created: "2025-11-12T14:15:13.587712+02:00"
     description: A Helm chart for deploying Technitium DNS Server on Kubernetes
     digest: b0245d57c44d496c1099aa5bf68917752df1789b87e3e8d3e400ba8b6ae66dc6
     keywords:
@@ -354,4 +287,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/technitium-1.0.0.tgz
     version: 1.0.0
-generated: "2025-11-11T22:03:12.7875+02:00"
+generated: "2025-11-12T14:15:13.544048+02:00"
