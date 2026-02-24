@@ -2,7 +2,20 @@ apiVersion: v1
 entries:
   PXCertManager:
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.071944+02:00"
+    created: "2026-02-24T11:54:50.571191+02:00"
+    dependencies:
+    - name: cert-manager
+      repository: https://charts.jetstack.io
+      version: 1.18.2
+    description: A Helm chart for Kubernetes
+    digest: 38825e95b478224d392e42374bd8c9b7f255ce5793771ce96390dbcb5cd14365
+    name: PXCertManager
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/PXCertManager-1.0.4.tgz
+    version: 1.0.4
+  - apiVersion: v2
+    created: "2026-02-24T11:54:50.565568+02:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -17,7 +30,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2026-02-24T11:42:34.073889+02:00"
+    created: "2026-02-24T11:54:50.573213+02:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -31,7 +44,7 @@ entries:
     version: 1.0.0
   gitrunner:
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.079415+02:00"
+    created: "2026-02-24T11:54:50.578596+02:00"
     dependencies:
     - name: actions-runner-controller
       repository: https://actions-runner-controller.github.io/actions-runner-controller
@@ -46,7 +59,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-02-24T11:42:34.08153+02:00"
+    created: "2026-02-24T11:54:50.580511+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -60,7 +73,7 @@ entries:
     version: 1.0.0
   mariadb-operator:
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.090601+02:00"
+    created: "2026-02-24T11:54:50.589196+02:00"
     dependencies:
     - name: mariadb-operator
       repository: https://mariadb-operator.github.io/mariadb-operator
@@ -73,7 +86,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.6.tgz
     version: 1.0.6
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.086164+02:00"
+    created: "2026-02-24T11:54:50.58495+02:00"
     dependencies:
     - name: mariadb-operator
       repository: https://mariadb-operator.github.io/mariadb-operator
@@ -88,7 +101,7 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2026-02-24T11:42:34.096424+02:00"
+    created: "2026-02-24T11:54:50.594588+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -102,7 +115,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2026-02-24T11:42:34.095463+02:00"
+    created: "2026-02-24T11:54:50.593638+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -116,7 +129,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2026-02-24T11:42:34.094267+02:00"
+    created: "2026-02-24T11:54:50.59288+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -130,7 +143,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2026-02-24T11:42:34.093343+02:00"
+    created: "2026-02-24T11:54:50.59212+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -144,7 +157,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2026-02-24T11:42:34.092549+02:00"
+    created: "2026-02-24T11:54:50.591342+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -158,7 +171,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2026-02-24T11:42:34.091609+02:00"
+    created: "2026-02-24T11:54:50.590423+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -173,7 +186,7 @@ entries:
   phpipam:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-02-24T11:42:34.096938+02:00"
+    created: "2026-02-24T11:54:50.595001+02:00"
     description: A Helm chart for Kubernetes
     digest: 359af1ab7a78b73aa3d241096ae0df1b3d64ba92ab1764fef99d2b6420af7f9d
     name: phpipam
@@ -183,7 +196,7 @@ entries:
     version: 1.0.0
   px-awx:
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.101689+02:00"
+    created: "2026-02-24T11:54:50.599242+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -196,7 +209,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.10037+02:00"
+    created: "2026-02-24T11:54:50.598302+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -209,7 +222,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.099197+02:00"
+    created: "2026-02-24T11:54:50.597354+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -223,7 +236,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.19.1
-    created: "2026-02-24T11:42:34.098147+02:00"
+    created: "2026-02-24T11:54:50.59633+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -237,7 +250,7 @@ entries:
     version: 1.0.0
   pxmetallb:
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.104049+02:00"
+    created: "2026-02-24T11:54:50.601319+02:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
@@ -251,7 +264,7 @@ entries:
     version: 1.0.0
   storage:
   - apiVersion: v2
-    created: "2026-02-24T11:42:34.10661+02:00"
+    created: "2026-02-24T11:54:50.604166+02:00"
     dependencies:
     - name: longhorn
       repository: https://charts.longhorn.io
@@ -266,7 +279,7 @@ entries:
   technitium:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-02-24T11:42:34.107149+02:00"
+    created: "2026-02-24T11:54:50.60464+02:00"
     description: A Helm chart for deploying Technitium DNS Server on Kubernetes
     digest: b0245d57c44d496c1099aa5bf68917752df1789b87e3e8d3e400ba8b6ae66dc6
     keywords:
@@ -287,4 +300,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/technitium-1.0.0.tgz
     version: 1.0.0
-generated: "2026-02-24T11:42:34.065822+02:00"
+generated: "2026-02-24T11:54:50.55801+02:00"
