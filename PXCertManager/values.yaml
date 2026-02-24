@@ -1,0 +1,22 @@
+vault:
+  role: eso-kv-certmanager
+
+commonAnnotations:
+  argocd.argoproj.io/sync-wave: "2"
+
+serviceAccount:
+  name: cert-manager
+
+letsencrypt:
+  email: test@gmail.com
+
+certificate:
+  dnsNames:
+    - "*.example.com"
+    - "example.com"    
+
+certificatemaria:
+  dnsNames:
+    - db
+    - db
+
