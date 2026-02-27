@@ -1,0 +1,21 @@
+apiVersion: external-secrets.io/v1
+kind: ClusterSecretStore
+metadata:
+  name: {{ .Values.esoClusterSecretStoreRedis.name }}
+  annotations:
+    argocd.argoproj.io/sync-wave: "-2"
+spec:
+  provider:
+    kubernetes:
+      remoteNamespace: {{ .Values.esoClusterSecretStoreRedis.remoteNamespace }}
+      server:
+        url: "https://kubernetes.default"
+        caProvider:
+          type: ConfigMap
+          name: kube-root-ca.crt
+          key: ca.crt
+          namespace: default
+      auth:
+        serviceAccount:
+          name: {{ .Values.serviceAccount.name }}
+          namespace: {{ .Release.Namespace }}

@@ -1,0 +1,36 @@
+apiVersion: "acid.zalan.do/v1"
+kind: "postgresql"
+
+metadata:
+  name: {{ .Values.postgresql.name | quote }}
+  namespace: {{ .Release.Namespace }}
+  labels:
+    team: acid
+  annotations:
+    argocd.argoproj.io/sync-wave: "-6"
+
+spec:
+  teamId: "acid"
+
+  postgresql:
+    version: "15"
+
+  numberOfInstances: 3
+
+  volume:
+    size: {{ .Values.postgresql.size | quote }}
+
+  users:
+    harbor:
+      - superuser
+      - createdb
+
+  databases:
+    harbor_core: harbor
+    harbor_clair: harbor
+    harbor_notary_server: harbor
+    harbor_notary_signer: harbor
+
+  patroni:
+    synchronous_mode: true
+    synchronous_mode_strict: false

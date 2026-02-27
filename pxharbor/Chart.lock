@@ -1,0 +1,6 @@
+dependencies:
+- name: harbor
+  repository: file://charts/harbor
+  version: 1.18.2
+digest: sha256:71267d08207d4ef5cdde2553e52fa33bd0d0c70be7fa13564db95bd0fc010529
+generated: "2026-02-27T02:22:23.892682+02:00"
