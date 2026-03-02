@@ -1,13 +1,13 @@
 apiVersion: external-secrets.io/v1
 kind: ClusterSecretStore
 metadata:
-  name: {{ .Values.esoClusterSecretStoreRedis.name }}
+  name: {{ .Values.clusterSecretStore1.name }}
   annotations:
-    argocd.argoproj.io/sync-wave: "-2"
+    argocd.argoproj.io/sync-wave: "-3"
 spec:
   provider:
     kubernetes:
-      remoteNamespace: {{ .Values.esoClusterSecretStoreRedis.remoteNamespace }}
+      remoteNamespace: {{ .Values.clusterSecretStore1.remoteNamespace }}
       server:
         url: "https://kubernetes.default"
         caProvider:
@@ -17,5 +17,5 @@ spec:
           namespace: default
       auth:
         serviceAccount:
-          name: {{ .Values.serviceAccount.name }}
-          namespace: {{ .Release.Namespace }}
+          name: {{ .Values.clusterSecretStore1.serviceAccountName }}
+          namespace: {{ .Values.clusterSecretStore1.serviceAccountNamespace }}
