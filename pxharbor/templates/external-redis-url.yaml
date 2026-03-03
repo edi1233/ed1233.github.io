@@ -1,0 +1,26 @@
+apiVersion: external-secrets.io/v1
+kind: ExternalSecret
+metadata:
+  name: harbor-redis-url
+  namespace: {{ .Release.Namespace | quote }}
+  annotations:
+    argocd.argoproj.io/sync-wave: "-5"
+spec:
+  refreshInterval: 1h
+  secretStoreRef:
+    name: {{ .Values.clusterSecretStore1.name }}
+    kind: ClusterSecretStore
+  target:
+    name: harbor-redis-url
+    creationPolicy: Owner
+    template:
+      engineVersion: v2
+      data:
+        _REDIS_URL_CORE: "redis://default:{{ `{{ .password }}` }}@{{ .Values.harbor.redis.external.addr }}/0?idle_timeout_seconds=30"
+        _REDIS_URL_REG:  "redis://default:{{ `{{ .password }}` }}@{{ .Values.harbor.redis.external.addr }}/2?idle_timeout_seconds=30"
+        _REDIS_URL_JOB:  "redis://default:{{ `{{ .password }}` }}@{{ .Values.harbor.redis.external.addr }}/1"
+  data:
+    - secretKey: password
+      remoteRef:
+        key: redis-auth
+        property: password
