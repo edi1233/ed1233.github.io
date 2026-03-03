@@ -4,7 +4,7 @@ metadata:
   name: harbor-redis-url
   namespace: {{ .Release.Namespace | quote }}
   annotations:
-    argocd.argoproj.io/sync-wave: "-5"
+    argocd.argoproj.io/sync-wave: "-1"
 spec:
   refreshInterval: 1h
   secretStoreRef:
