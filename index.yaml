@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   PXCertManager:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.089417047+02:00"
+    created: "2026-03-11T22:09:38.095877563+02:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -15,7 +15,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/PXCertManager-1.0.4.tgz
     version: 1.0.4
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.084090786+02:00"
+    created: "2026-03-11T22:09:38.091285315+02:00"
     dependencies:
     - name: cert-manager
       repository: https://charts.jetstack.io
@@ -30,7 +30,7 @@ entries:
   edischart:
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2026-03-11T21:45:23.091125394+02:00"
+    created: "2026-03-11T22:09:38.097445847+02:00"
     dependencies:
     - name: mdcore
       repository: file://charts/mdcore
@@ -44,7 +44,7 @@ entries:
     version: 1.0.0
   gitrunner:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.096139858+02:00"
+    created: "2026-03-11T22:09:38.101985777+02:00"
     dependencies:
     - name: actions-runner-controller
       repository: https://actions-runner-controller.github.io/actions-runner-controller
@@ -59,7 +59,7 @@ entries:
   harbor-wrapper:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-03-11T21:45:23.098101853+02:00"
+    created: "2026-03-11T22:09:38.104144653+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -73,7 +73,7 @@ entries:
     version: 1.0.0
   mariadb-operator:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.106100797+02:00"
+    created: "2026-03-11T22:09:38.111967916+02:00"
     dependencies:
     - name: mariadb-operator
       repository: https://mariadb-operator.github.io/mariadb-operator
@@ -86,7 +86,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/mariadb-operator-1.0.6.tgz
     version: 1.0.6
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.102039759+02:00"
+    created: "2026-03-11T22:09:38.107974966+02:00"
     dependencies:
     - name: mariadb-operator
       repository: https://mariadb-operator.github.io/mariadb-operator
@@ -101,7 +101,7 @@ entries:
   mdcore:
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2026-03-11T21:45:23.111566711+02:00"
+    created: "2026-03-11T22:09:38.116955038+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -115,7 +115,7 @@ entries:
     version: 5.14.8
   - apiVersion: v2
     appVersion: 5.14.7
-    created: "2026-03-11T21:45:23.110809855+02:00"
+    created: "2026-03-11T22:09:38.116001502+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -129,7 +129,7 @@ entries:
     version: 5.14.7
   - apiVersion: v2
     appVersion: 5.14.6
-    created: "2026-03-11T21:45:23.10996268+02:00"
+    created: "2026-03-11T22:09:38.11512935+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -143,7 +143,7 @@ entries:
     version: 5.14.6
   - apiVersion: v2
     appVersion: 5.14.4
-    created: "2026-03-11T21:45:23.109049941+02:00"
+    created: "2026-03-11T22:09:38.114329253+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -157,7 +157,7 @@ entries:
     version: 5.14.4
   - apiVersion: v2
     appVersion: 5.14.3
-    created: "2026-03-11T21:45:23.107892151+02:00"
+    created: "2026-03-11T22:09:38.113620669+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -171,7 +171,7 @@ entries:
     version: 5.14.3
   - apiVersion: v2
     appVersion: 5.14.2
-    created: "2026-03-11T21:45:23.1070369+02:00"
+    created: "2026-03-11T22:09:38.112789954+02:00"
     description: 'This is a Helm chart for deploying MetaDefender Core (https://www.opswat.com/products/metadefender/core)
       in a Kubernetes cluster.   Release Notes - Environment variables to migrate
       processing history (Pre-steps needed) - Environment variables to enable Licensing
@@ -185,7 +185,7 @@ entries:
     version: 5.14.2
   pdns:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.123723185+02:00"
+    created: "2026-03-11T22:09:38.129271894+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -198,7 +198,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.9.tgz
     version: 0.2.9
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.123282114+02:00"
+    created: "2026-03-11T22:09:38.128848627+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -211,7 +211,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.8.tgz
     version: 0.2.8
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.122840202+02:00"
+    created: "2026-03-11T22:09:38.128410392+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -224,7 +224,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.7.tgz
     version: 0.2.7
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.122383933+02:00"
+    created: "2026-03-11T22:09:38.127980703+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -237,7 +237,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.121757774+02:00"
+    created: "2026-03-11T22:09:38.12685341+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -250,7 +250,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.121294441+02:00"
+    created: "2026-03-11T22:09:38.126441584+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -263,7 +263,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.3.tgz
     version: 0.2.3
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.120600464+02:00"
+    created: "2026-03-11T22:09:38.125875769+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -276,7 +276,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.119613335+02:00"
+    created: "2026-03-11T22:09:38.12527122+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -289,7 +289,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.118788942+02:00"
+    created: "2026-03-11T22:09:38.124571442+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -302,7 +302,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.118129981+02:00"
+    created: "2026-03-11T22:09:38.123933952+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -315,7 +315,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.9.tgz
     version: 0.1.9
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.117395889+02:00"
+    created: "2026-03-11T22:09:38.123135758+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -328,7 +328,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.8.tgz
     version: 0.1.8
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.116754962+02:00"
+    created: "2026-03-11T22:09:38.122134533+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -341,7 +341,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.116207541+02:00"
+    created: "2026-03-11T22:09:38.121617429+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -354,7 +354,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.115665149+02:00"
+    created: "2026-03-11T22:09:38.121095786+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -367,7 +367,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.114885401+02:00"
+    created: "2026-03-11T22:09:38.120468645+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -380,7 +380,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.114149024+02:00"
+    created: "2026-03-11T22:09:38.119832167+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -393,7 +393,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.113235965+02:00"
+    created: "2026-03-11T22:09:38.11913277+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -406,7 +406,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pdns-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.112409829+02:00"
+    created: "2026-03-11T22:09:38.118338273+02:00"
     dependencies:
     - name: px-pdns
       repository: file://charts/px-pdns
@@ -421,7 +421,7 @@ entries:
   phpipam:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-03-11T21:45:23.123997101+02:00"
+    created: "2026-03-11T22:09:38.129592999+02:00"
     description: A Helm chart for Kubernetes
     digest: 359af1ab7a78b73aa3d241096ae0df1b3d64ba92ab1764fef99d2b6420af7f9d
     name: phpipam
@@ -432,7 +432,7 @@ entries:
   postgres-operator:
   - apiVersion: v2
     appVersion: 1.14.0
-    created: "2026-03-11T21:45:23.124752383+02:00"
+    created: "2026-03-11T22:09:38.130376264+02:00"
     description: Postgres Operator creates and manages PostgreSQL clusters running
       in Kubernetes
     digest: b982f22350228e9606fcbc97eebf6d011c2ae5456d3042d3f767527c8508d500
@@ -454,7 +454,7 @@ entries:
     version: 1.14.0
   px-awx:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.12750622+02:00"
+    created: "2026-03-11T22:09:38.132996719+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -467,7 +467,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-4.0.0.tgz
     version: 4.0.0
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.126925426+02:00"
+    created: "2026-03-11T22:09:38.132422318+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -480,7 +480,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/px-awx-3.0.0.tgz
     version: 3.0.0
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.126293596+02:00"
+    created: "2026-03-11T22:09:38.131725946+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -494,7 +494,7 @@ entries:
     version: 2.0.0
   - apiVersion: v2
     appVersion: 2.19.1
-    created: "2026-03-11T21:45:23.125672686+02:00"
+    created: "2026-03-11T22:09:38.13102726+02:00"
     dependencies:
     - name: awx-operator
       repository: https://ansible-community.github.io/awx-operator-helm/
@@ -509,7 +509,7 @@ entries:
   px-pdns:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-03-11T21:45:23.127906844+02:00"
+    created: "2026-03-11T22:09:38.133349774+02:00"
     description: Helm chart for PowerDNS auth + recursor + dnsdist + PowerDNS-Admin
       + MariaDB
     digest: 99c4920fc07f387bc3f5ad9a3eb6c44e507695576c2e6514471db29f48c0b42d
@@ -520,7 +520,20 @@ entries:
     version: 0.1.0
   pxexternaldns:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.128903411+02:00"
+    created: "2026-03-11T22:09:38.135190811+02:00"
+    dependencies:
+    - name: external-dns
+      repository: https://kubernetes-sigs.github.io/external-dns/
+      version: 1.20.0
+    description: A Helm chart for Kubernetes
+    digest: f3de0a656af20f8998744805630a0a83d7fd67a26a8ccbcb9a76f19b0f2a624f
+    name: pxexternaldns
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/pxexternaldns-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    created: "2026-03-11T22:09:38.134258375+02:00"
     dependencies:
     - name: external-dns
       repository: https://kubernetes-sigs.github.io/external-dns/
@@ -534,7 +547,7 @@ entries:
     version: 0.1.0
   pxharbor:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.179918277+02:00"
+    created: "2026-03-11T22:09:38.187127824+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -547,7 +560,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.6.tgz
     version: 0.2.6
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.177802011+02:00"
+    created: "2026-03-11T22:09:38.185048267+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -560,7 +573,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.5.tgz
     version: 0.2.5
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.175368909+02:00"
+    created: "2026-03-11T22:09:38.182153666+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -573,7 +586,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.4.tgz
     version: 0.2.4
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.173331662+02:00"
+    created: "2026-03-11T22:09:38.179858263+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -586,7 +599,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.2.tgz
     version: 0.2.2
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.170915021+02:00"
+    created: "2026-03-11T22:09:38.176717258+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -599,7 +612,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.1.tgz
     version: 0.2.1
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.168834793+02:00"
+    created: "2026-03-11T22:09:38.174777174+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -612,7 +625,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.0.tgz
     version: 0.2.0
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.164708883+02:00"
+    created: "2026-03-11T22:09:38.170600258+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -625,7 +638,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.9.tgz
     version: 0.1.9
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.16044376+02:00"
+    created: "2026-03-11T22:09:38.16652901+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -638,7 +651,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.8.tgz
     version: 0.1.8
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.156363556+02:00"
+    created: "2026-03-11T22:09:38.162537022+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -651,7 +664,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.7.tgz
     version: 0.1.7
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.152229671+02:00"
+    created: "2026-03-11T22:09:38.158258765+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -664,7 +677,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.6.tgz
     version: 0.1.6
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.148095054+02:00"
+    created: "2026-03-11T22:09:38.154222023+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -677,7 +690,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.5.tgz
     version: 0.1.5
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.143636558+02:00"
+    created: "2026-03-11T22:09:38.150076826+02:00"
     dependencies:
     - name: harbor
       repository: file://charts/harbor
@@ -690,7 +703,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.4.tgz
     version: 0.1.4
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.138945844+02:00"
+    created: "2026-03-11T22:09:38.145408204+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -703,7 +716,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.3.tgz
     version: 0.1.3
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.136832844+02:00"
+    created: "2026-03-11T22:09:38.14306471+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -716,7 +729,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.2.tgz
     version: 0.1.2
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.134179006+02:00"
+    created: "2026-03-11T22:09:38.140331964+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -729,7 +742,7 @@ entries:
     - https://edi1233.github.io/ed1233.github.io/pxharbor-0.1.1.tgz
     version: 0.1.1
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.131641928+02:00"
+    created: "2026-03-11T22:09:38.137989192+02:00"
     dependencies:
     - name: harbor
       repository: https://helm.goharbor.io
@@ -743,7 +756,7 @@ entries:
     version: 0.1.0
   pxmetallb:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.182239829+02:00"
+    created: "2026-03-11T22:09:38.189471287+02:00"
     dependencies:
     - name: metallb
       repository: https://metallb.github.io/metallb
@@ -757,7 +770,7 @@ entries:
     version: 1.0.0
   pxredis:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.189860481+02:00"
+    created: "2026-03-11T22:09:38.19616848+02:00"
     dependencies:
     - name: redis
       repository: file://charts/redis
@@ -771,7 +784,7 @@ entries:
     version: 0.1.0
   storage:
   - apiVersion: v2
-    created: "2026-03-11T21:45:23.192635507+02:00"
+    created: "2026-03-11T22:09:38.198569852+02:00"
     dependencies:
     - name: longhorn
       repository: https://charts.longhorn.io
@@ -786,7 +799,7 @@ entries:
   technitium:
   - apiVersion: v2
     appVersion: latest
-    created: "2026-03-11T21:45:23.193045459+02:00"
+    created: "2026-03-11T22:09:38.199062761+02:00"
     description: A Helm chart for deploying Technitium DNS Server on Kubernetes
     digest: b0245d57c44d496c1099aa5bf68917752df1789b87e3e8d3e400ba8b6ae66dc6
     keywords:
@@ -807,4 +820,4 @@ entries:
     urls:
     - https://edi1233.github.io/ed1233.github.io/technitium-1.0.0.tgz
     version: 1.0.0
-generated: "2026-03-11T21:45:23.078552005+02:00"
+generated: "2026-03-11T22:09:38.085824791+02:00"
