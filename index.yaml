@@ -586,6 +586,19 @@ entries:
     version: 0.1.0
   pxharbor:
   - apiVersion: v2
+    created: "2026-07-05T06:42:55Z"
+    dependencies:
+    - name: harbor
+      repository: file://charts/harbor
+      version: 1.18.4
+    description: A Helm chart for Kubernetes
+    digest: 278a22af6228ee9c2a53a6dd207d5da0ff272ef4c9ea401a5b435b93e464eb66
+    name: pxharbor
+    type: application
+    urls:
+    - https://edi1233.github.io/ed1233.github.io/pxharbor-0.2.7.tgz
+    version: 0.2.7
+  - apiVersion: v2
     created: "2026-03-12T12:49:10.0113376+02:00"
     dependencies:
     - name: harbor
